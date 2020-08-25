@@ -1,1 +1,1 @@
-# gpa-calulator-app
+# gpa-calculator-app
