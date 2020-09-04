@@ -1,0 +1,24 @@
+<mat-dialog>
+  <h3>
+    Invoice Summary
+  </h3>
+  <p>Order date: {{ this.todayDate | date }}</p>
+
+  <mat-divider></mat-divider>
+
+  <mat-dialog-content>
+    <div fxLayout="column" class="invoice-details">
+      <mat-list>
+      <h4>Line Items</h4>
+        <mat-list-item *ngFor="let item of service">
+          <p> {{ item.name }}      {{ item.cost | currency }} </p>
+        </mat-list-item>
+
+        <h4> Total Charges:  {{ this.invoice | currency }}  </h4>
+      </mat-list>
+    </div>
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-raised-button color="accent" matDialogClose="confirm">OK</button>
+  </mat-dialog-actions>
+</mat-dialog>

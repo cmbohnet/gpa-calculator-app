@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'gpa-calculator-app1'`, () => {
+  it(`should have as title 'bobs-computer-repair-shop'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('gpa-calculator-app1');
+    expect(app.title).toEqual('bobs-computer-repair-shop');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('gpa-calculator-app1 app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('bobs-computer-repair-shop app is running!');
   });
 });

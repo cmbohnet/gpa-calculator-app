@@ -1,19 +1,19 @@
 /**
  * Title: app-routing.module.ts
  * Author: Chris Bohnet
- * Date: 11 August 2020
+ * Date: 4 September 2020
  * Description: app-routing.module
  */
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { BaseLayoutComponent } from './base-layout/base-layout.component';
+//import { BaseLayoutComponent } from './base-layout/base-layout.component';
 import { HomeComponent } from './home/home.component';
-import { AuthLayoutComponent } from './auth-layout/auth-layout.component';
-import { NotFoundComponent } from './not-found/not-found.component';
-import { SignInComponent } from './sign-in/sign-in.component';
-import { SignInGuard } from './sign-in.guard';
+//import { AuthLayoutComponent } from './auth-layout/auth-layout.component';
+//import { NotFoundComponent } from './not-found/not-found.component';
+//import { SignInComponent } from './sign-in/sign-in.component';
+//import { SignInGuard } from './sign-in.guard';
 
-const routes: Routes = [
+/*const routes: Routes = [
   {
     path: '',
     component: BaseLayoutComponent,
@@ -42,6 +42,13 @@ const routes: Routes = [
   {
     path: '**',
     redirectTo: 'session/not-found'
+  }
+];
+*/
+const routes: Routes = [
+  {
+    path: '',
+    component: HomeComponent
   }
 ];
 
